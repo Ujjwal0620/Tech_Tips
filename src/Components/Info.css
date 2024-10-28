@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.info {
+   position: relative;
+   top:17vh;
+   padding: 100px 50px;
+   /* border: 1px solid black; */
+   box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.439) inset;
+   
+}
+.info::before{
+    
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem deleniti ullam illum, architecto ipsum nostrum at soluta corrupti nihil tempora quam iste. Asperiores ex nemo eos magnam nostrum excepturi voluptas.';
+    background-color: rgba(255, 255, 0, 0.804);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 100px 50px;
+    font-size: large;
+    transform: scaleY(0);
+    transition: all 1s;
+
+    transform-origin: top;
+
+
+}
+.info:hover:before{
+    transform: scaleY(1);
+    color: black;
+}

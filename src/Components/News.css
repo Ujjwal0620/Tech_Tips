@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.newsCard {
+
+
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.439);
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    width: 460px;
+    height: 26vh;
+}
+
+.author {
+    position: absolute;
+    right: 10px;
+    padding: 20px;
+}
+
+.num_comments {
+    position: absolute;
+    left: 10px;
+    padding: 20px 10px;
+}
+
+.inp {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    position: absolute;
+    bottom: 2vh;
+    width: 95%;
+
+}
+
+.url {
+    padding: 10px;
+    border-radius: 5px;
+
+    background-color: rgb(16, 82, 82);
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    transition: color 2s;
+
+}
+
+.url::before {
+    content: '';
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    z-index: -1;
+    transform:scaleX(0);
+    transform-origin: left;
+
+    transition: all 0.7s;
+
+
+}
+
+.url:hover::before {
+    transform:scaleX(1);
+
+
+
+}
+.url:hover{
+    color: black;
+
+}
